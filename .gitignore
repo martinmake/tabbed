@@ -1,0 +1,6 @@
+*.o
+*.orig
+*.rej
+*.tar.gz
+tabbed
+xembed
