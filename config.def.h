@@ -45,11 +45,14 @@ static Key keys[] = {
 	{  AltMask|ControlMask ,XK_Return    ,focusonce   ,{ 0 }                          },
 	{  AltMask|ControlMask ,XK_Return    ,spawn       ,{ 0 }                          },
 
+	{          ControlMask ,XK_n         ,rotate      ,{ .i = +1 }                    },
+	{          ControlMask ,XK_p         ,rotate      ,{ .i = -1 }                    },
 	{  AltMask|ControlMask ,XK_l         ,rotate      ,{ .i = +1 }                    },
 	{  AltMask|ControlMask ,XK_h         ,rotate      ,{ .i = -1 }                    },
 	{  AltMask|ControlMask ,XK_j         ,movetab     ,{ .i = -1 }                    },
 	{  AltMask|ControlMask ,XK_k         ,movetab     ,{ .i = +1 }                    },
 	{          ControlMask ,XK_Tab       ,rotate      ,{ .i =  0 }                    },
+	{  AltMask|ControlMask ,XK_Tab       ,rotate      ,{ .i =  0 }                    },
 
 	{          ControlMask ,XK_s         ,spawn,       SETPROP("_TABBED_SELECT_TAB")  },
 
